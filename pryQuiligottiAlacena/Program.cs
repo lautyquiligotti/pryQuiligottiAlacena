@@ -16,7 +16,7 @@ namespace pryQuiligottiAlacena
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAlacena());
+            Application.Run(new FrmPrincipal());
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryQuiligottiAlacena
 {
-    public partial class frmAlacena : Form
+    public partial class FrmAlacena : Form
     {
-        public frmAlacena()
+        public FrmAlacena()
         {
             InitializeComponent();
         }
