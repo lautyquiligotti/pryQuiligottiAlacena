@@ -28,32 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTipoDeProducto = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblNombreDelProducto = new System.Windows.Forms.Label();
+            this.txtNombreDelProducto = new System.Windows.Forms.TextBox();
+            this.lblCantidad = new System.Windows.Forms.Label();
+            this.lblCantidadMinima = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lblFechaVencimiento = new System.Windows.Forms.Label();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnVerAlacena = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblTipoDeProducto
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(49, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tipo De Producto :";
+            this.lblTipoDeProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoDeProducto.Location = new System.Drawing.Point(49, 39);
+            this.lblTipoDeProducto.Name = "lblTipoDeProducto";
+            this.lblTipoDeProducto.Size = new System.Drawing.Size(150, 20);
+            this.lblTipoDeProducto.TabIndex = 0;
+            this.lblTipoDeProducto.Text = "Tipo De Producto :";
+            this.lblTipoDeProducto.Click += new System.EventHandler(this.lblTipoDeProducto_Click);
             // 
             // comboBox1
             // 
@@ -69,42 +70,42 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
             // 
-            // label2
+            // lblNombreDelProducto
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre Del Producto";
+            this.lblNombreDelProducto.AutoSize = true;
+            this.lblNombreDelProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreDelProducto.Location = new System.Drawing.Point(49, 77);
+            this.lblNombreDelProducto.Name = "lblNombreDelProducto";
+            this.lblNombreDelProducto.Size = new System.Drawing.Size(157, 16);
+            this.lblNombreDelProducto.TabIndex = 1;
+            this.lblNombreDelProducto.Text = "Nombre Del Producto";
             // 
-            // textBox1
+            // txtNombreDelProducto
             // 
-            this.textBox1.Location = new System.Drawing.Point(235, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtNombreDelProducto.Location = new System.Drawing.Point(235, 77);
+            this.txtNombreDelProducto.Name = "txtNombreDelProducto";
+            this.txtNombreDelProducto.Size = new System.Drawing.Size(121, 20);
+            this.txtNombreDelProducto.TabIndex = 2;
             // 
-            // label3
+            // lblCantidad
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(100, 118);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Cantidad";
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.Location = new System.Drawing.Point(100, 118);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(70, 16);
+            this.lblCantidad.TabIndex = 3;
+            this.lblCantidad.Text = "Cantidad";
             // 
-            // label4
+            // lblCantidadMinima
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(100, 152);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 16);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Cantidad Minima";
+            this.lblCantidadMinima.AutoSize = true;
+            this.lblCantidadMinima.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadMinima.Location = new System.Drawing.Point(100, 152);
+            this.lblCantidadMinima.Name = "lblCantidadMinima";
+            this.lblCantidadMinima.Size = new System.Drawing.Size(123, 16);
+            this.lblCantidadMinima.TabIndex = 4;
+            this.lblCantidadMinima.Text = "Cantidad Minima";
             // 
             // checkBox1
             // 
@@ -112,7 +113,7 @@
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(103, 202);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 20);
+            this.checkBox1.Size = new System.Drawing.Size(80, 20);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Caduca";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -138,67 +139,67 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(196, 20);
             this.dateTimePicker1.TabIndex = 8;
             // 
-            // label5
+            // lblFechaVencimiento
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(100, 244);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 16);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Fecha De Vencimiento";
+            this.lblFechaVencimiento.AutoSize = true;
+            this.lblFechaVencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaVencimiento.Location = new System.Drawing.Point(100, 244);
+            this.lblFechaVencimiento.Name = "lblFechaVencimiento";
+            this.lblFechaVencimiento.Size = new System.Drawing.Size(164, 16);
+            this.lblFechaVencimiento.TabIndex = 9;
+            this.lblFechaVencimiento.Text = "Fecha De Vencimiento";
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(235, 311);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 29);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(235, 311);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(96, 29);
+            this.btnAgregar.TabIndex = 10;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(374, 311);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 29);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(374, 311);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(101, 29);
+            this.btnCancelar.TabIndex = 11;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnVerAlacena
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(86, 311);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 29);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Ver Alacena";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnVerAlacena.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerAlacena.Location = new System.Drawing.Point(86, 311);
+            this.btnVerAlacena.Name = "btnVerAlacena";
+            this.btnVerAlacena.Size = new System.Drawing.Size(113, 29);
+            this.btnVerAlacena.TabIndex = 12;
+            this.btnVerAlacena.Text = "Ver Alacena";
+            this.btnVerAlacena.UseVisualStyleBackColor = true;
+            this.btnVerAlacena.Click += new System.EventHandler(this.button3_Click);
             // 
-            // FormGestion
+            // FrmGestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 363);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnVerAlacena);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.lblFechaVencimiento);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblCantidadMinima);
+            this.Controls.Add(this.lblCantidad);
+            this.Controls.Add(this.txtNombreDelProducto);
+            this.Controls.Add(this.lblNombreDelProducto);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
-            this.Name = "FormGestion";
+            this.Controls.Add(this.lblTipoDeProducto);
+            this.Name = "FrmGestion";
             this.Text = "FormGestion";
             this.Load += new System.EventHandler(this.FormGestion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -210,19 +211,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTipoDeProducto;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblNombreDelProducto;
+        private System.Windows.Forms.TextBox txtNombreDelProducto;
+        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.Label lblCantidadMinima;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lblFechaVencimiento;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnVerAlacena;
     }
 }

@@ -27,5 +27,10 @@ namespace pryQuiligottiAlacena
             FrmAlacena VentanaAlacena = new FrmAlacena();
             VentanaAlacena.ShowDialog();
         }
+
+        private void lblTipoDeProducto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
