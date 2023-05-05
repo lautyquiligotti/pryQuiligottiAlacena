@@ -1,6 +1,6 @@
 ﻿namespace pryQuiligottiAlacena
 {
-    partial class FrmGestion
+    partial class FrmGestionAlacena
     {
         /// <summary>
         /// Required designer variable.
@@ -36,14 +36,12 @@
             this.lblCantidadMinima = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.lblFechaVencimiento = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnVerAlacena = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTipoDeProducto
@@ -76,7 +74,7 @@
             this.lblNombreDelProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreDelProducto.Location = new System.Drawing.Point(49, 77);
             this.lblNombreDelProducto.Name = "lblNombreDelProducto";
-            this.lblNombreDelProducto.Size = new System.Drawing.Size(157, 16);
+            this.lblNombreDelProducto.Size = new System.Drawing.Size(156, 16);
             this.lblNombreDelProducto.TabIndex = 1;
             this.lblNombreDelProducto.Text = "Nombre Del Producto";
             // 
@@ -91,9 +89,9 @@
             // 
             this.lblCantidad.AutoSize = true;
             this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(100, 118);
+            this.lblCantidad.Location = new System.Drawing.Point(71, 136);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(70, 16);
+            this.lblCantidad.Size = new System.Drawing.Size(69, 16);
             this.lblCantidad.TabIndex = 3;
             this.lblCantidad.Text = "Cantidad";
             // 
@@ -103,38 +101,30 @@
             this.lblCantidadMinima.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidadMinima.Location = new System.Drawing.Point(100, 152);
             this.lblCantidadMinima.Name = "lblCantidadMinima";
-            this.lblCantidadMinima.Size = new System.Drawing.Size(123, 16);
+            this.lblCantidadMinima.Size = new System.Drawing.Size(0, 16);
             this.lblCantidadMinima.TabIndex = 4;
-            this.lblCantidadMinima.Text = "Cantidad Minima";
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(103, 202);
+            this.checkBox1.Location = new System.Drawing.Point(74, 180);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 20);
+            this.checkBox1.Size = new System.Drawing.Size(79, 20);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Caduca";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(205, 118);
+            this.numericUpDown1.Location = new System.Drawing.Point(181, 136);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(38, 20);
             this.numericUpDown1.TabIndex = 6;
             // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(248, 148);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(32, 20);
-            this.numericUpDown2.TabIndex = 7;
-            // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(279, 244);
+            this.dateTimePicker1.Location = new System.Drawing.Point(258, 228);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(196, 20);
             this.dateTimePicker1.TabIndex = 8;
@@ -143,16 +133,16 @@
             // 
             this.lblFechaVencimiento.AutoSize = true;
             this.lblFechaVencimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaVencimiento.Location = new System.Drawing.Point(100, 244);
+            this.lblFechaVencimiento.Location = new System.Drawing.Point(71, 228);
             this.lblFechaVencimiento.Name = "lblFechaVencimiento";
-            this.lblFechaVencimiento.Size = new System.Drawing.Size(164, 16);
+            this.lblFechaVencimiento.Size = new System.Drawing.Size(163, 16);
             this.lblFechaVencimiento.TabIndex = 9;
             this.lblFechaVencimiento.Text = "Fecha De Vencimiento";
             // 
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(235, 311);
+            this.btnAgregar.Location = new System.Drawing.Point(213, 288);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(96, 29);
             this.btnAgregar.TabIndex = 10;
@@ -162,7 +152,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(374, 311);
+            this.btnCancelar.Location = new System.Drawing.Point(353, 288);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 29);
             this.btnCancelar.TabIndex = 11;
@@ -172,7 +162,7 @@
             // btnVerAlacena
             // 
             this.btnVerAlacena.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerAlacena.Location = new System.Drawing.Point(86, 311);
+            this.btnVerAlacena.Location = new System.Drawing.Point(52, 288);
             this.btnVerAlacena.Name = "btnVerAlacena";
             this.btnVerAlacena.Size = new System.Drawing.Size(113, 29);
             this.btnVerAlacena.TabIndex = 12;
@@ -180,7 +170,7 @@
             this.btnVerAlacena.UseVisualStyleBackColor = true;
             this.btnVerAlacena.Click += new System.EventHandler(this.button3_Click);
             // 
-            // FrmGestion
+            // FrmGestionAlacena
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -190,7 +180,6 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lblFechaVencimiento);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.lblCantidadMinima);
@@ -199,11 +188,10 @@
             this.Controls.Add(this.lblNombreDelProducto);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblTipoDeProducto);
-            this.Name = "FrmGestion";
+            this.Name = "FrmGestionAlacena";
             this.Text = "FormGestion";
             this.Load += new System.EventHandler(this.FormGestion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,7 +207,6 @@
         private System.Windows.Forms.Label lblCantidadMinima;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label lblFechaVencimiento;
         private System.Windows.Forms.Button btnAgregar;

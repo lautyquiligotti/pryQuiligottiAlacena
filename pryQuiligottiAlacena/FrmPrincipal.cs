@@ -19,13 +19,14 @@ namespace pryQuiligottiAlacena
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmGestion VentanaGestion = new FrmGestion();
+            FrmGestionAlacena VentanaGestion = new FrmGestionAlacena();
             VentanaGestion.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-          FrmAlacena VentanaAlacena = new FrmAlacena();
+            FrmFinanzas VentanaFinanzas = new FrmFinanzas();
+            VentanaFinanzas.ShowDialog();
         }
     }
 }
