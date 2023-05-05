@@ -39,7 +39,7 @@
             this.btnGestionAlacena.Name = "btnGestionAlacena";
             this.btnGestionAlacena.Size = new System.Drawing.Size(213, 106);
             this.btnGestionAlacena.TabIndex = 0;
-            this.btnGestionAlacena.Text = "Gestion De Alacena";
+            this.btnGestionAlacena.Text = "Alacena";
             this.btnGestionAlacena.UseVisualStyleBackColor = true;
             this.btnGestionAlacena.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -50,7 +50,7 @@
             this.btnVerAlacena.Name = "btnVerAlacena";
             this.btnVerAlacena.Size = new System.Drawing.Size(195, 106);
             this.btnVerAlacena.TabIndex = 1;
-            this.btnVerAlacena.Text = "Ver Alacena";
+            this.btnVerAlacena.Text = "Gastos";
             this.btnVerAlacena.UseVisualStyleBackColor = true;
             this.btnVerAlacena.Click += new System.EventHandler(this.button2_Click);
             // 
