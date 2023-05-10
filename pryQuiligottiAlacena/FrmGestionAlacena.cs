@@ -12,6 +12,10 @@ namespace pryQuiligottiAlacena
 {
     public partial class FrmGestionAlacena : Form
     {
+        //Declarar Variables
+        string varTipoDeProducto, varNombreDelProducto;
+        int varCantidad;
+    
         public FrmGestionAlacena()
         {
             InitializeComponent();
@@ -29,6 +33,37 @@ namespace pryQuiligottiAlacena
         }
 
         private void lblTipoDeProducto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNombreDelProducto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCantidad_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblFechaVencimiento_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            varTipoDeProducto = cboTipo.Text;
+            varNombreDelProducto = Convert.ToString(txtNombreDelProducto.Text);
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
         {
 
         }
