@@ -84,14 +84,14 @@ namespace pryQuiligottiAlacena
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            txtDeposito.Text = 0;
-            txtAlquiler.Text = 0; 
+            txtDeposito.Text = 0.ToString();
+            txtAlquiler.Text = 0.ToString(); 
 
-            //varDeposito = 0;
-            //varAlquiler = 0;
-            //VarImpuestos= 0;
-            //varComida = 0;
-            //varGastosVarios = 0;
+            varDeposito = 0;
+            varAlquiler = 0;
+            VarImpuestos= 0;
+            varComida = 0;
+            varGastosVarios = 0;
 
         }
     }

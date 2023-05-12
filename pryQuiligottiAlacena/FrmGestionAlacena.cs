@@ -15,6 +15,7 @@ namespace pryQuiligottiAlacena
         //Declarar Variables
         string varTipoDeProducto, varNombreDelProducto;
         int varCantidad;
+        
     
         public FrmGestionAlacena()
         {
@@ -28,8 +29,7 @@ namespace pryQuiligottiAlacena
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FrmAlacena VentanaAlacena = new FrmAlacena();
-            VentanaAlacena.ShowDialog();
+
         }
 
         private void lblTipoDeProducto_Click(object sender, EventArgs e)
@@ -61,6 +61,13 @@ namespace pryQuiligottiAlacena
         {
             varTipoDeProducto = cboTipo.Text;
             varNombreDelProducto = Convert.ToString(txtNombreDelProducto.Text);
+            varCantidad = Convert.ToInt32(contador1.Value);
+            lstAlacena.Items.Add("Categoria:" + varTipoDeProducto + "    " + "Cantidad: " + varCantidad + "    " + "Producto: " + varNombreDelProducto);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
