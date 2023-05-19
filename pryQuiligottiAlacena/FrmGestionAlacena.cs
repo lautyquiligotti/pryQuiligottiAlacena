@@ -13,7 +13,7 @@ namespace pryQuiligottiAlacena
     public partial class FrmGestionAlacena : Form
     {
         //Declarar Variables
-        string varTipoDeProducto, varNombreDelProducto;
+        string varTipoDeProducto, varNombreDelProducto, varVencimiento;
         int varCantidad;
         
     
@@ -59,10 +59,16 @@ namespace pryQuiligottiAlacena
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            varTipoDeProducto = cboTipo.Text;
+            varTipoDeProducto = lstTipo.Text;
             varNombreDelProducto = Convert.ToString(txtNombreDelProducto.Text);
             varCantidad = Convert.ToInt32(contador1.Value);
+            varVencimiento = dtpVencimiento.Value.ToString();
             lstAlacena.Items.Add("Categoria:" + varTipoDeProducto + "    " + "Cantidad: " + varCantidad + "    " + "Producto: " + varNombreDelProducto);
+            if (chkCaduca.Checked == true)
+            {
+                lstAlacena.Items.Add("Caduca:  " + varVencimiento);
+            }
+
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

@@ -28,5 +28,10 @@ namespace pryQuiligottiAlacena
             FrmFinanzas VentanaFinanzas = new FrmFinanzas();
             VentanaFinanzas.ShowDialog();
         }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

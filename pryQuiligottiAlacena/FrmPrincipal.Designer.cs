@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.btnGestionAlacena = new System.Windows.Forms.Button();
             this.btnVerAlacena = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -61,8 +62,10 @@
             this.ClientSize = new System.Drawing.Size(493, 291);
             this.Controls.Add(this.btnVerAlacena);
             this.Controls.Add(this.btnGestionAlacena);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPrincipal";
             this.Text = "FrmPrincipal";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.ResumeLayout(false);
 
         }

@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmGestionAlacena));
             this.lblTipoDeProducto = new System.Windows.Forms.Label();
-            this.cboTipo = new System.Windows.Forms.ComboBox();
+            this.lstTipo = new System.Windows.Forms.ComboBox();
             this.lblNombreDelProducto = new System.Windows.Forms.Label();
             this.txtNombreDelProducto = new System.Windows.Forms.TextBox();
             this.lblCantidad = new System.Windows.Forms.Label();
             this.lblCantidadMinima = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkCaduca = new System.Windows.Forms.CheckBox();
             this.contador1 = new System.Windows.Forms.NumericUpDown();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpVencimiento = new System.Windows.Forms.DateTimePicker();
             this.lblFechaVencimiento = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnVerAlacena = new System.Windows.Forms.Button();
             this.lstAlacena = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.contador1)).BeginInit();
             this.SuspendLayout();
@@ -55,19 +55,19 @@
             this.lblTipoDeProducto.Text = "Tipo De Producto :";
             this.lblTipoDeProducto.Click += new System.EventHandler(this.lblTipoDeProducto_Click);
             // 
-            // cboTipo
+            // lstTipo
             // 
-            this.cboTipo.Items.AddRange(new object[] {
+            this.lstTipo.Items.AddRange(new object[] {
             "Enlatados",
             "Limpieza",
             "Lacteos",
             "Pan",
             "Cocina",
             "Medicamentos"});
-            this.cboTipo.Location = new System.Drawing.Point(198, 27);
-            this.cboTipo.Name = "cboTipo";
-            this.cboTipo.Size = new System.Drawing.Size(121, 21);
-            this.cboTipo.TabIndex = 0;
+            this.lstTipo.Location = new System.Drawing.Point(198, 27);
+            this.lstTipo.Name = "lstTipo";
+            this.lstTipo.Size = new System.Drawing.Size(121, 21);
+            this.lstTipo.TabIndex = 0;
             // 
             // lblNombreDelProducto
             // 
@@ -107,17 +107,17 @@
             this.lblCantidadMinima.Size = new System.Drawing.Size(0, 16);
             this.lblCantidadMinima.TabIndex = 4;
             // 
-            // checkBox1
+            // chkCaduca
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(33, 171);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 20);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Caduca";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.chkCaduca.AutoSize = true;
+            this.chkCaduca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCaduca.Location = new System.Drawing.Point(33, 171);
+            this.chkCaduca.Name = "chkCaduca";
+            this.chkCaduca.Size = new System.Drawing.Size(80, 20);
+            this.chkCaduca.TabIndex = 5;
+            this.chkCaduca.Text = "Caduca";
+            this.chkCaduca.UseVisualStyleBackColor = true;
+            this.chkCaduca.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // contador1
             // 
@@ -126,12 +126,12 @@
             this.contador1.Size = new System.Drawing.Size(38, 20);
             this.contador1.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dtpVencimiento
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(341, 171);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(196, 20);
-            this.dateTimePicker1.TabIndex = 8;
+            this.dtpVencimiento.Location = new System.Drawing.Point(341, 171);
+            this.dtpVencimiento.Name = "dtpVencimiento";
+            this.dtpVencimiento.Size = new System.Drawing.Size(196, 20);
+            this.dtpVencimiento.TabIndex = 8;
             // 
             // lblFechaVencimiento
             // 
@@ -147,7 +147,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(223, 224);
+            this.btnAgregar.Location = new System.Drawing.Point(103, 236);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(96, 29);
             this.btnAgregar.TabIndex = 10;
@@ -158,24 +158,13 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(404, 224);
+            this.btnCancelar.Location = new System.Drawing.Point(278, 236);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 29);
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnVerAlacena
-            // 
-            this.btnVerAlacena.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerAlacena.Location = new System.Drawing.Point(52, 224);
-            this.btnVerAlacena.Name = "btnVerAlacena";
-            this.btnVerAlacena.Size = new System.Drawing.Size(113, 29);
-            this.btnVerAlacena.TabIndex = 12;
-            this.btnVerAlacena.Text = "Ver Alacena";
-            this.btnVerAlacena.UseVisualStyleBackColor = true;
-            this.btnVerAlacena.Click += new System.EventHandler(this.button3_Click);
             // 
             // lstAlacena
             // 
@@ -192,19 +181,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 431);
             this.Controls.Add(this.lstAlacena);
-            this.Controls.Add(this.btnVerAlacena);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lblFechaVencimiento);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpVencimiento);
             this.Controls.Add(this.contador1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chkCaduca);
             this.Controls.Add(this.lblCantidadMinima);
             this.Controls.Add(this.lblCantidad);
             this.Controls.Add(this.txtNombreDelProducto);
             this.Controls.Add(this.lblNombreDelProducto);
-            this.Controls.Add(this.cboTipo);
+            this.Controls.Add(this.lstTipo);
             this.Controls.Add(this.lblTipoDeProducto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmGestionAlacena";
             this.Text = "FormGestion";
             this.Load += new System.EventHandler(this.FormGestion_Load);
@@ -217,18 +206,17 @@
         #endregion
 
         private System.Windows.Forms.Label lblTipoDeProducto;
-        private System.Windows.Forms.ComboBox cboTipo;
+        private System.Windows.Forms.ComboBox lstTipo;
         private System.Windows.Forms.Label lblNombreDelProducto;
         private System.Windows.Forms.TextBox txtNombreDelProducto;
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.Label lblCantidadMinima;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkCaduca;
         private System.Windows.Forms.NumericUpDown contador1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpVencimiento;
         private System.Windows.Forms.Label lblFechaVencimiento;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnVerAlacena;
         private System.Windows.Forms.ListBox lstAlacena;
     }
 }

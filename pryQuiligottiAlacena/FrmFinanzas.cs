@@ -15,7 +15,7 @@ namespace pryQuiligottiAlacena
 
         //Definir Variables
         decimal varDeposito;
-        decimal varAlquiler, VarImpuestos, varComida, varGastosVarios, varDisponible;
+        decimal varAlquiler, varImpuestos, varComida, varGastosVarios, varDisponible;
 
         public FrmFinanzas()
         {
@@ -62,7 +62,7 @@ namespace pryQuiligottiAlacena
             //Iniciar Variables
             varDeposito = 0;
             varAlquiler = 0;
-            VarImpuestos = 0;
+            varImpuestos = 0;
             varComida = 0;
             varGastosVarios = 0;
             varDisponible = 0;  
@@ -73,11 +73,11 @@ namespace pryQuiligottiAlacena
         {
             varDeposito = Convert.ToDecimal(txtDeposito.Text);
             varAlquiler = Convert.ToDecimal(txtAlquiler.Text);
-            VarImpuestos = Convert.ToDecimal(txtImpuestos.Text);
+            varImpuestos = Convert.ToDecimal(txtImpuestos.Text);
             varComida = Convert.ToDecimal(txtComida.Text);
             varGastosVarios = Convert.ToDecimal(txtGastosVarios.Text);
 
-            varDisponible = varDeposito - (varAlquiler + varComida + VarImpuestos + varGastosVarios);
+            varDisponible = varDeposito - (varAlquiler + varComida + varImpuestos + varGastosVarios);
             lblSaldoDisponible.Text = varDisponible.ToString(); 
 
         }
@@ -85,11 +85,15 @@ namespace pryQuiligottiAlacena
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             txtDeposito.Text = 0.ToString();
-            txtAlquiler.Text = 0.ToString(); 
+            txtAlquiler.Text = 0.ToString();
+            txtComida.Text = 0.ToString();
+            txtGastosVarios.Text = 0.ToString();
+            txtImpuestos.Text = 0.ToString();
+            lblSaldoDisponible.Text = 0.ToString();
 
             varDeposito = 0;
             varAlquiler = 0;
-            VarImpuestos= 0;
+            varImpuestos= 0;
             varComida = 0;
             varGastosVarios = 0;
 
